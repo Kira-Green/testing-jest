@@ -20,7 +20,7 @@ test('admin should be in usernames', () => {
     usernames = ['john', 'karen', 'admin'];
     expect(usernames).toContain('admin')
 });
-
+// tests a promise
 test('fetch user fetches the user with name Leanne Graham', () => {
     expect.assertions(1);
     return functions.fetchUser()
