@@ -1,6 +1,9 @@
 const functions = require('./functions')
 const axios = require('axios');
+
+
 jest.mock('axios');
+
 // 
 test('should fetch users', async () => {
 
@@ -15,3 +18,4 @@ test('should fetch users', async () => {
   return await functions.fetchUser().then(data => expect(data).toEqual(user));
   
 });
+
