@@ -1,4 +1,5 @@
 const functions = require('./functions')
+const axios = require('axios');
 
 test ('adds 2 + 2 to equal 4', () => {
     expect(functions.add(2, 2)).toBe(4)
@@ -34,5 +35,4 @@ test('fetch user fetches the user with name Leanne Graham', async () => {
     const data = await functions.fetchUser()
     expect(data.name).toEqual('Leanne Graham')
 });
-
 

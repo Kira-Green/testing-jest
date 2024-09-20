@@ -5,6 +5,15 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testEnvironment": "node",
+  
+    "clearMocks": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+    
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
